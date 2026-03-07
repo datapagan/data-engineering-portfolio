@@ -4,3 +4,6 @@ FIELD_DELIMITER = ','
 SKIP_HEADER = 1
 FIELD_OPTIONALLY_ENCLOSED_BY = '"'
 NULL_IF = ('NULL','null','');
+
+CREATE OR REPLACE STAGE stg_workforce_files
+FILE_FORMAT = ff_workforce_csv;
