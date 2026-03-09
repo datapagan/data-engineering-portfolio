@@ -105,7 +105,7 @@ The sample workforce file was uploaded to the Snowflake internal stage using Sno
 Example command:
 
 ```sql
-PUT file://C:/Users/YourUser/Downloads/workforce_headcount.csv
+PUT file://C:/Project/data_engineering_porfolio/sftp_pipeline/workforce_headcount.csvC:/Users/YourUser/Downloads/workforce_headcount.csv
 @DATA_ENGINEERING_PORTFOLIO.SFTP_PIPELINE.STG_WORKFORCE_FILES
 AUTO_COMPRESS=TRUE
 OVERWRITE=TRUE;
