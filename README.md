@@ -1,4 +1,8 @@
 # Project 1 — SFTP to Snowflake Data Pipeline
+![Snowflake](https://img.shields.io/badge/Snowflake-Data%20Platform-blue)
+![SQL](https://img.shields.io/badge/SQL-Data%20Engineering-lightgrey)
+![SnowSQL](https://img.shields.io/badge/SnowSQL-CLI%20Tool-blue)
+![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black)
 
 ## Table of Contents
 
@@ -23,20 +27,23 @@ The SQL scripts are version controlled in GitHub and executed from a Git-connect
 ---
 
 ## Architecture
+## Pipeline Diagram
 Local CSV File
-│
-│ SnowSQL PUT
-▼
-Snowflake Stage (STG_WORKFORCE_FILES)
-│
-│ COPY INTO
-▼
-Raw Table (WORKFORCE_RAW)
-│
-│ Validation Queries
-▼
-Audit Log (LOAD_AUDIT_LOG)
-
+      │
+      │ SnowSQL PUT
+      ▼
+Snowflake Stage
+(STG_WORKFORCE_FILES)
+      │
+      │ COPY INTO
+      ▼
+Raw Table
+(WORKFORCE_RAW)
+      │
+      │ Validation Queries
+      ▼
+Audit Log
+(LOAD_AUDIT_LOG)
 
 ---
 
