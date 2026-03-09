@@ -1,5 +1,18 @@
 # Project 1 — SFTP to Snowflake Data Pipeline
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Step 1 — Create Database Objects](#step-1--create-database-objects)
+- [Step 2 — Upload File to Stage](#step-2--upload-file-to-stage)
+- [Step 3 — Load Data](#step-3--load-data)
+- [Step 4 — Validate the Load](#step-4--validate-the-load)
+- [Audit Logging](#audit-logging)
+- [Key Concepts Demonstrated](#key-concepts-demonstrated)
+
 ## Overview
 
 This project demonstrates a simple data ingestion pipeline that loads workforce data from a CSV file into Snowflake.  
