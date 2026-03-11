@@ -17,6 +17,39 @@ API extraction using Python
 → SQL transformation  
 → Curated workforce trend table
 
+## Architecture
+The pipeline follows a simple external data ingestion pattern commonly used in analytics and data engineering workflows.
+
+```text
+BLS Workforce API
+        │
+        ▼
+Python Extraction Script
+(bls_workforce_extractor.py)
+        │
+        ▼
+CSV Landing File
+(bls_workforce_data.csv)
+        │
+        ▼
+Snowflake Internal Stage
+(STG_WORKFORCE_API_FILES)
+        │
+        ▼
+RAW_WORKFORCE_API_DATA
+        │
+        ▼
+SQL Transformation
+(05_transform_raw_to_curated.sql)
+        │
+        ▼
+CURATED_WORKFORCE_TRENDS
+        │
+        ▼
+Validation Queries
+(06_validation_queries.sql)
+```
+
 ## Tools Used
 - Python
 - Snowflake SQL
