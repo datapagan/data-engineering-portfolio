@@ -1,0 +1,9 @@
+API Source
+   ↓
+RAW_WORKFORCE_API_DATA
+   ↓
+Data Quality Checks
+   ↓
+DQ_PIPELINE_RUNS / DQ_RULE_RESULTS / DQ_FAILED_RECORDS
+   ↓
+Monitoring
