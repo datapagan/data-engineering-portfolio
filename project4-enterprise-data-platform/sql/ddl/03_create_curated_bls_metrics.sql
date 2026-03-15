@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE CURATED.BLS_METRICS_MONTHLY (
+CREATE OR REPLACE TABLE P4_CURATED.BLS_METRICS_MONTHLY (
     series_id         STRING,
     report_month      DATE,
     period_name       STRING,
