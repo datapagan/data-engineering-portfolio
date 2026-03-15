@@ -8,4 +8,4 @@ SELECT
         WHEN metric_value IS NULL AND data_quality_flag = 'VALID' THEN 'FAIL'
         ELSE 'PASS'
     END AS validation_status
-FROM CURATED.BLS_METRICS_MONTHLY;
+FROM P4_CURATED.BLS_METRICS_MONTHLY;
