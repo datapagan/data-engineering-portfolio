@@ -1,4 +1,4 @@
-INSERT INTO CURATED.BLS_METRICS_MONTHLY (
+INSERT INTO P4_CURATED.BLS_METRICS_MONTHLY (
     series_id,
     report_month,
     period_name,
@@ -17,4 +17,4 @@ SELECT
         ELSE 'VALID'
     END AS data_quality_flag,
     load_timestamp
-FROM TRANSFORM.BLS_TIME_SERIES_CLEAN;
+FROM P4_TRANSFORM.BLS_TIME_SERIES_CLEAN;
