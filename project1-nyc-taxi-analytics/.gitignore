@@ -1,0 +1,44 @@
+# =========================
+# DATA (DO NOT TRACK)
+# =========================
+data/raw/
+data/staging/
+data/curated/
+data/reference/
+
+# File types
+*.parquet
+*.csv
+
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# =========================
+# NOTEBOOKS
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# OS / SYSTEM FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# LOG FILES
+# =========================
+*.log
+
+# =========================
+# IDE
+# =========================
+.vscode/
